@@ -1,0 +1,1 @@
+body.commits.map(commit, commit.added + commit.modified + commit.removed).exists(files, true in files.map(file, matches(file, "^(app|tests)|^Gemfile$")))
